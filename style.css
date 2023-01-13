@@ -142,6 +142,7 @@ h3+p {
 .button-subscription {
     grid-row: 2;
     max-height: 50px;
+    padding: 5px;
 }
 
 .image {
