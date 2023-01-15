@@ -15,60 +15,66 @@
 
         <div class="content-container form-container">
             <div class="content-section">
-                <h1>Stelle dir ein eigenes Set an farbenfrohen Stiften zusammen</h2>
+                <div>
+                    <h2>Stelle dir ein eigenes Set an farbenfrohen Stiften zusammen</h2>
                     <p>Viele farbenfrohe Stifte bis zu deiner Haustür.</p>
                     <form>
                         <label for="email">Meine E-Mail</label>
                         <input type="email" id="email" name="email">
                     </form>
-                    <button class="submit-button">Weiter</button>
-            </div>
+                </div>
+                
 
-            <div id="subscription-selector" class="content-section">
-                <h2>Auswahl des Abosystems</h2>
-                <button class="button-subscription" id="btn-weekly">Wöchentlich</button>
-                <button class="button-subscription" id="btn-monthly">Monatlich</button>
-                <button class="button-subscription" id="btn-quarter">Quartal</button>
+                <button class="submit-button">Weiter</button>
             </div>
 
             <div class="content-section">
-                <h2>Auswahl der Stifte</h2>
-                <div class="color-selector">
-                    <button id="btn-red" class="button-color-select"></button>
-                    <button id="btn-pink" class="button-color-select"></button>
-                    <button id="btn-violet" class="button-color-select"></button>
-                    <button id="btn-darkblue" class="button-color-select"></button>
-                    <button id="btn-skyblue" class="button-color-select"></button>
-                    <button id="btn-cyan" class="button-color-select"></button>
-                    <button id="btn-green" class="button-color-select"></button>
-                    <button id="btn-darkgreen" class="button-color-select"></button>
-                    <button id="btn-lime" class="button-color-select"></button>
-                    <button id="btn-orange" class="button-color-select"></button>
-                    <button id="btn-brown" class="button-color-select"></button>
-                    <button id="btn-black" class="button-color-select"></button>
+                <div>
+                    <div id="subscription-selector">
+                        <h2>Auswahl des Abosystems</h2>
+                        <button class="button-subscription" id="btn-weekly">Wöchentlich</button>
+                        <button class="button-subscription" id="btn-monthly">Monatlich</button>
+                        <button class="button-subscription" id="btn-quarter">Quartal</button>
+
+                    </div>
+                    <h2>Auswahl der Stifte</h2>
+                    <div class="color-selector">
+                        <button id="btn-red" class="button-color-select"></button>
+                        <button id="btn-pink" class="button-color-select"></button>
+                        <button id="btn-violet" class="button-color-select"></button>
+                        <button id="btn-darkblue" class="button-color-select"></button>
+                        <button id="btn-skyblue" class="button-color-select"></button>
+                        <button id="btn-cyan" class="button-color-select"></button>
+                        <button id="btn-green" class="button-color-select"></button>
+                        <button id="btn-darkgreen" class="button-color-select"></button>
+                        <button id="btn-lime" class="button-color-select"></button>
+                        <button id="btn-orange" class="button-color-select"></button>
+                        <button id="btn-brown" class="button-color-select"></button>
+                        <button id="btn-black" class="button-color-select"></button>
+                    </div>
                 </div>
-
                 <button class="submit-button">Auswahl bestätigen</button>
-
             </div>
 
-            <div  class="content-section">
-                <div>
-                    <div id="buy-preview">
+            <div class="content-section">
+                <div id="buy-preview">
+                    <div class="buy-preview">
                         <h3>Gesamtsumme</h3>
                         <p>Jede Woche ein Stifte Set für je 2€</p>
-                        <div id="summary-container">
-                            <p class="r-1-c-2">Set Preis</p>
-                            <p class="r-1-c-3 content-end">8€</p>
-                            <p class="r-2-c-2">Versand</p>
-                            <p class="r-2-c-3 content-end">kostenlos</p>
-                            <p class="buy-summary r-3-c-2">1 Set kostet</p>
-                            <p class="buy-summary r-3-c-3 content-end">8€</p>
-                        </div>
                     </div>
-                    <button class="submit-button">Bestätigen</button>
+
+
+                    <div id="summary-container" class="buy-preview">
+                        <p class="r-1-c-2">Set Preis</p>
+                        <p class="r-1-c-3 content-end">8€</p>
+                        <p class="r-2-c-2">Versand</p>
+                        <p class="r-2-c-3 content-end">kostenlos</p>
+                        <p class="buy-summary r-3-c-2">1 Set kostet</p>
+                        <p class="buy-summary r-3-c-3 content-end">8€</p>
+                    </div>
                 </div>
 
+                <button class="submit-button">Bestätigen</button>
             </div>
 
         </div>
