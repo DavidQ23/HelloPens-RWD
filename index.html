@@ -13,23 +13,24 @@
 <body>
     <section id="registration-form">
 
-        <div class="content-container form-container">
+        <div class="content-container form-container" id="registration-confirmation">
             <div class="content-section">
-                <div>
+                <div class="content-r-1-2" id="registration-form-content">
                     <h2>Stelle dir ein eigenes Set an farbenfrohen Stiften zusammen</h2>
                     <p>Viele farbenfrohe Stifte bis zu deiner Haustür.</p>
                     <form>
                         <label for="email">Meine E-Mail</label>
                         <input type="email" id="email" name="email">
                     </form>
+                    <button class="submit-button">Weiter</button>
                 </div>
-                
 
-                <button class="submit-button">Weiter</button>
+
+
             </div>
 
-            <div class="content-section">
-                <div>
+            <div class="content-section" id="subscription-settings">
+                <div class="content-r-1-2">
                     <div id="subscription-selector">
                         <h2>Auswahl des Abosystems</h2>
                         <button class="button-subscription" id="btn-weekly">Wöchentlich</button>
@@ -56,20 +57,20 @@
                 <button class="submit-button">Auswahl bestätigen</button>
             </div>
 
-            <div class="content-section">
-                <div id="buy-preview">
+            <div class="content-section" id="product-summary">
+                <div id="buy-preview" class="content-r-1-2">
                     <div class="buy-preview">
                         <h3>Gesamtsumme</h3>
-                        <p>Jede Woche ein Stifte Set für je 2€</p>
+                        <p>Ein Stifte Set für je 2€</p>
                     </div>
 
 
                     <div id="summary-container" class="buy-preview">
-                        <p class="r-1-c-2">Set Preis</p>
+                        <p class="r-1-c-2 content-start">Set Preis</p>
                         <p class="r-1-c-3 content-end">8€</p>
-                        <p class="r-2-c-2">Versand</p>
+                        <p class="r-2-c-2 content-start">Versand</p>
                         <p class="r-2-c-3 content-end">kostenlos</p>
-                        <p class="buy-summary r-3-c-2">1 Set kostet</p>
+                        <p class="buy-summary r-3-c-2 content-start">1 Set kostet</p>
                         <p class="buy-summary r-3-c-3 content-end">8€</p>
                     </div>
                 </div>
@@ -83,12 +84,11 @@
     <section id="buy-reason">
         <div class="content-container" id="description">
             <div class="img-container">
-                <img class="image" src="Bilddateien/circleOfPens.png" alt="Buntstifte zu einem Kreis geformt">
+                <img class="image" src="Bilddateien/circleOfPens.v1.png" alt="Buntstifte zu einem Kreis geformt">
             </div>
 
             <div class="description">
                 <h3 id="heading-reason">Warum HelloPens?</h3>
-                <hr>
                 <p>Du hast es satt, dass man Buntstifte nur in vordefinierten Sets kaufen kann? Bei UNS bestimmst DU,
                     welche
                     Stifte du in einem Set haben möchtest. Wir liefern dir deine Auswahl zu dir nach Hause gemäß dem
@@ -101,7 +101,22 @@
     </section>
 
     <section id="social-media-posts" class="content-container">
+        <div>
+            <h1>Zeichnen & Teilen #DeinHelloPens</h1>
+        </div>
 
+        <div class="cardslide-container">
+            <div class="content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image-container">
+                            <img src="./Bilddateien/Bild1.png" alt="">
+                        </div>
+                        <p class="imgage-text">Die #HelloPens Stifte kurbeln meine Kreativität an</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 

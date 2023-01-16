@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -111,18 +114,21 @@ input[type="email"] {
 
 #summary-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
         ". ."
         ". ."
         ". .";
-    border-top: 2px solid #FFFFFF;
 }
 
 .content-end {
     justify-self: end;
+}
+
+.content-start {
+    justify-self: left;
 }
 
 
@@ -172,15 +178,6 @@ button {
     color: #0CA53A;
 }
 
-
-
-hr {
-    background-color: #0CA53A;
-    height: 2px;
-    border: 0;
-    max-width: 100px;
-}
-
 table {
     width: 100%;
 }
@@ -204,6 +201,8 @@ table {
 #buy-preview {
     background-color: #E5E5E5;
     margin-bottom: 16px;
+    display: grid;
+    align-items: center;
 }
 
 .buy-preview+div {
@@ -211,7 +210,7 @@ table {
 }
 
 .buy-summary {
-    background-color: #C1C1C1;
+    color: #0CA53A;
 }
 
 .r-1-c-2 {
@@ -244,9 +243,46 @@ table {
     grid-row: 3;
 }
 
-.image-container {
-    max-width: max-content;
+h1 {
+    text-align: center;
 }
+
+.img-container {
+    max-width: max-content;
+    align-self: center;
+}
+
+#social-media-posts {
+    border-top: 1px solid black;
+}
+
+.card .image-container {
+    width: 140px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.card .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0.5px solid black;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding: 20px;
+}
+
+.card .card-content p {
+    max-width: 200px;
+    text-align: center;
+}
+
+
 
 
 @media screen and (min-width: 1024px) {
@@ -264,23 +300,37 @@ table {
         flex-direction: row;
     }
 
+    #heading-reason, #heading-reason+p{
+        text-align: left;
+    }
+    
+
     .description {
         width: 50%;
         margin-left: 5%;
         margin-right: 5%;
     }
 
+
+
     .content-section {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin: 0.5rem 0.5rem;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto;
+        grid-template-rows: 1fr  1fr auto;
         gap: 0px 0px;
         grid-template-areas:
             "."
             "."
             ".";
+    }
+
+    .content-r-1-2 {
+        grid-row: 1 / span 2;
+    }
+
+    #registration-form-content {
+        align-self: center;
     }
 
     #subscription-selector {
