@@ -273,53 +273,6 @@ function ShowHiddenSummary() {
     sixthP.innerText = valuePriceForSet + "€";
     sixthP.classList.add("r-3-c-3");
     summaryContainer.appendChild(sixthP);
-
-
-    /*switch (penCount) {
-        case 1:
-            firstP.innerText = priceForSet;
-            firstP.classList.add("r-1-c-2");
-            summayContainer.appendChild(firstP);
-            secondP.innerText = valuePriceForSet + "€";
-            secondP.classList.add("r-1-c-3");
-            summayContainer.appendChild(secondP);
-            thirdP.innerText = DeliveryCharge;
-            thirdP.classList.add("r-2-c-2");
-            summayContainer.appendChild(thirdP);
-            forthP.classList.add("r-2-c-3");
-            forthP.innerText = valueDeliveryCharge;
-            summayContainer.appendChild(forthP);
-            fithP.innerText = PriceSummary;
-            fithP.classList.add("r-3-c-2");
-            summayContainer.appendChild(fithP);
-            sixthP.innerText = valuePriceForSet + "€";
-            sixthP.classList.add("r-3-c-3");
-            summayContainer.appendChild(sixthP);
-            break;
-
-        case 2:
-            firstP.innerText = priceForSet;
-            firstP.classList.add("r-1-c-2");
-            summayContainer.appendChild(firstP);
-            secondP.innerText = valuePriceForSet + "€";
-            secondP.classList.add("r-1-c-3");
-            summayContainer.appendChild(secondP);
-            thirdP.innerText = DeliveryCharge;
-            thirdP.classList.add("r-2-c-2");
-            summayContainer.appendChild(thirdP);
-            forthP.classList.add("r-2-c-3");
-            forthP.innerText = valueDeliveryCharge;
-            summayContainer.appendChild(forthP);
-            fithP.innerText = PriceSummary;
-            fithP.classList.add("r-3-c-2");
-            summayContainer.appendChild(fithP);
-            sixthP.innerText = valuePriceForSet + "€";
-            sixthP.classList.add("r-3-c-3");
-            summayContainer.appendChild(sixthP);
-            break;
-
-
-    }*/
 }
 
 function ActivateWeeklyButton() {
