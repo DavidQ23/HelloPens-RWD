@@ -20,7 +20,7 @@ let product_summary = document.getElementById("product-summary");
 let displaystyle_subscription_settings = window.getComputedStyle(subscription_settings).getPropertyValue("display");
 let displaystyle_product_summary = window.getComputedStyle(subscription_settings).getPropertyValue("display");
 
-let summayContainer = document.getElementById("summary-container");
+let summaryContainer = document.getElementById("summary-container");
 
 let colorSelectButtons = document.getElementsByClassName("button-color-select");
 
@@ -75,7 +75,7 @@ let valuePriceSummary;
 
 // Functions
 function SelectRedButton() {
-    if (buttonRed.classList.contains("inactive")){
+    if (buttonRed.classList.contains("inactive")) {
         penCount += 1;
         buttonRed.classList.remove("inactive");
         buttonRed.className += " active";
@@ -88,7 +88,7 @@ function SelectRedButton() {
 }
 
 function SelectPinkButton() {
-    if (buttonPink.classList.contains("inactive")){
+    if (buttonPink.classList.contains("inactive")) {
         penCount += 1;
         buttonPink.classList.remove("inactive");
         buttonPink.className += " active";
@@ -101,7 +101,7 @@ function SelectPinkButton() {
 }
 
 function SelectVioletButton() {
-    if (buttonViolet.classList.contains("inactive")){
+    if (buttonViolet.classList.contains("inactive")) {
         penCount += 1;
         buttonViolet.classList.remove("inactive");
         buttonViolet.className += " active";
@@ -114,7 +114,7 @@ function SelectVioletButton() {
 }
 
 function SelectDarkblueButton() {
-    if (buttonDarkblue.classList.contains("inactive")){
+    if (buttonDarkblue.classList.contains("inactive")) {
         penCount += 1;
         buttonDarkblue.classList.remove("inactive");
         buttonDarkblue.className += " active";
@@ -127,7 +127,7 @@ function SelectDarkblueButton() {
 }
 
 function SelectSkyblueButton() {
-    if (buttonSkyblue.classList.contains("inactive")){
+    if (buttonSkyblue.classList.contains("inactive")) {
         penCount += 1;
         buttonSkyblue.classList.remove("inactive");
         buttonSkyblue.className += " active";
@@ -140,7 +140,7 @@ function SelectSkyblueButton() {
 }
 
 function SelectCyanButton() {
-    if (buttonCyan.classList.contains("inactive")){
+    if (buttonCyan.classList.contains("inactive")) {
         penCount += 1;
         buttonCyan.classList.remove("inactive");
         buttonCyan.className += " active";
@@ -153,7 +153,7 @@ function SelectCyanButton() {
 }
 
 function SelectGreenButton() {
-    if (buttonGreen.classList.contains("inactive")){
+    if (buttonGreen.classList.contains("inactive")) {
         penCount += 1;
         buttonGreen.classList.remove("inactive");
         buttonGreen.className += " active";
@@ -166,7 +166,7 @@ function SelectGreenButton() {
 }
 
 function SelectDarkgreenButton() {
-    if (buttonDarkgreen.classList.contains("inactive")){
+    if (buttonDarkgreen.classList.contains("inactive")) {
         penCount += 1;
         buttonDarkgreen.classList.remove("inactive");
         buttonDarkgreen.className += " active";
@@ -179,7 +179,7 @@ function SelectDarkgreenButton() {
 }
 
 function SelectLimeButton() {
-    if (buttonLime.classList.contains("inactive")){
+    if (buttonLime.classList.contains("inactive")) {
         penCount += 1;
         buttonLime.classList.remove("inactive");
         buttonLime.className += " active";
@@ -192,7 +192,7 @@ function SelectLimeButton() {
 }
 
 function SelectOrangeButton() {
-    if (buttonOrange.classList.contains("inactive")){
+    if (buttonOrange.classList.contains("inactive")) {
         penCount += 1;
         buttonOrange.classList.remove("inactive");
         buttonOrange.className += " active";
@@ -205,7 +205,7 @@ function SelectOrangeButton() {
 }
 
 function SelectBrownButton() {
-    if (buttonBrown.classList.contains("inactive")){
+    if (buttonBrown.classList.contains("inactive")) {
         penCount += 1;
         buttonBrown.classList.remove("inactive");
         buttonBrown.className += " active";
@@ -218,7 +218,7 @@ function SelectBrownButton() {
 }
 
 function SelectBlackButton() {
-    if (buttonBlack.classList.contains("inactive")){
+    if (buttonBlack.classList.contains("inactive")) {
         penCount += 1;
         buttonBlack.classList.remove("inactive");
         buttonBlack.className += " active";
@@ -241,34 +241,86 @@ function ShowHiddenSummary() {
 
 
     valuePriceForSet = 2 * penCount;
-    switch (penCount) {
+    let firstP = document.createElement("p");
+    let secondP = document.createElement("p");
+    let thirdP = document.createElement("p");
+    let forthP = document.createElement("p");
+    let fithP = document.createElement("p");
+    let sixthP = document.createElement("p");
+
+    let firstChild = summaryContainer.firstElementChild;
+
+    while (firstChild){
+        summaryContainer.removeChild(firstChild)
+        firstChild = summaryContainer.lastElementChild;
+    }
+
+    firstP.innerText = priceForSet;
+    firstP.classList.add("r-1-c-2");
+    summaryContainer.appendChild(firstP);
+    secondP.innerText = valuePriceForSet + "€";
+    secondP.classList.add("r-1-c-3");
+    summaryContainer.appendChild(secondP);
+    thirdP.innerText = DeliveryCharge;
+    thirdP.classList.add("r-2-c-2");
+    summaryContainer.appendChild(thirdP);
+    forthP.classList.add("r-2-c-3");
+    forthP.innerText = valueDeliveryCharge;
+    summaryContainer.appendChild(forthP);
+    fithP.innerText = PriceSummary;
+    fithP.classList.add("r-3-c-2");
+    summaryContainer.appendChild(fithP);
+    sixthP.innerText = valuePriceForSet + "€";
+    sixthP.classList.add("r-3-c-3");
+    summaryContainer.appendChild(sixthP);
+
+
+    /*switch (penCount) {
         case 1:
-            let firstP = document.createElement("p");
             firstP.innerText = priceForSet;
             firstP.classList.add("r-1-c-2");
             summayContainer.appendChild(firstP);
-            let secondP = document.createElement("p");
             secondP.innerText = valuePriceForSet + "€";
             secondP.classList.add("r-1-c-3");
             summayContainer.appendChild(secondP);
-            let thirdP = document.createElement("p");
             thirdP.innerText = DeliveryCharge;
             thirdP.classList.add("r-2-c-2");
             summayContainer.appendChild(thirdP);
-            let forthP = document.createElement("p");
             forthP.classList.add("r-2-c-3");
             forthP.innerText = valueDeliveryCharge;
             summayContainer.appendChild(forthP);
-            let fithP = document.createElement("p");
             fithP.innerText = PriceSummary;
             fithP.classList.add("r-3-c-2");
             summayContainer.appendChild(fithP);
-            let sixthP = document.createElement("p");
             sixthP.innerText = valuePriceForSet + "€";
             sixthP.classList.add("r-3-c-3");
             summayContainer.appendChild(sixthP);
-    }
-} 
+            break;
+
+        case 2:
+            firstP.innerText = priceForSet;
+            firstP.classList.add("r-1-c-2");
+            summayContainer.appendChild(firstP);
+            secondP.innerText = valuePriceForSet + "€";
+            secondP.classList.add("r-1-c-3");
+            summayContainer.appendChild(secondP);
+            thirdP.innerText = DeliveryCharge;
+            thirdP.classList.add("r-2-c-2");
+            summayContainer.appendChild(thirdP);
+            forthP.classList.add("r-2-c-3");
+            forthP.innerText = valueDeliveryCharge;
+            summayContainer.appendChild(forthP);
+            fithP.innerText = PriceSummary;
+            fithP.classList.add("r-3-c-2");
+            summayContainer.appendChild(fithP);
+            sixthP.innerText = valuePriceForSet + "€";
+            sixthP.classList.add("r-3-c-3");
+            summayContainer.appendChild(sixthP);
+            break;
+
+
+    }*/
+}
 
 function ActivateWeeklyButton() {
     weeklySub.style.backgroundColor = "#0CA53A";
