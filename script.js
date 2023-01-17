@@ -64,8 +64,6 @@ buttonBlack.addEventListener("click", SelectBlackButton);
 //Variable
 
 let penCount = 0;
-let clickCount = 1;
-
 let priceForSet = "Set Preis";
 let valuePriceForSet;
 
