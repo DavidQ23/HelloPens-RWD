@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.ts"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                         <label for="email">Meine E-Mail</label>
                         <input type="email" id="email" name="email">
                     </form>
-                    <button class="submit-button">Weiter</button>
+                    <button class="submit-button" id="continue-btn">Weiter</button>
                 </div>
 
 
@@ -40,21 +40,21 @@
                     </div>
                     <h2>Auswahl der Stifte</h2>
                     <div class="color-selector">
-                        <button id="btn-red" class="button-color-select"></button>
-                        <button id="btn-pink" class="button-color-select"></button>
-                        <button id="btn-violet" class="button-color-select"></button>
-                        <button id="btn-darkblue" class="button-color-select"></button>
-                        <button id="btn-skyblue" class="button-color-select"></button>
-                        <button id="btn-cyan" class="button-color-select"></button>
-                        <button id="btn-green" class="button-color-select"></button>
-                        <button id="btn-darkgreen" class="button-color-select"></button>
-                        <button id="btn-lime" class="button-color-select"></button>
-                        <button id="btn-orange" class="button-color-select"></button>
-                        <button id="btn-brown" class="button-color-select"></button>
-                        <button id="btn-black" class="button-color-select"></button>
+                        <button id="btn-red" class="button-color-select inactive"></button>
+                        <button id="btn-pink" class="button-color-select inactive"></button>
+                        <button id="btn-violet" class="button-color-select inactive"></button>
+                        <button id="btn-darkblue" class="button-color-select inactive"></button>
+                        <button id="btn-skyblue" class="button-color-select inactive"></button>
+                        <button id="btn-cyan" class="button-color-select inactive"></button>
+                        <button id="btn-green" class="button-color-select inactive"></button>
+                        <button id="btn-darkgreen" class="button-color-select inactive"></button>
+                        <button id="btn-lime" class="button-color-select inactive"></button>
+                        <button id="btn-orange" class="button-color-select inactive"></button>
+                        <button id="btn-brown" class="button-color-select inactive"></button>
+                        <button id="btn-black" class="button-color-select inactive"></button>
                     </div>
                 </div>
-                <button class="submit-button">Auswahl bestätigen</button>
+                <button class="submit-button" id="confirm-btn">Auswahl bestätigen</button>
             </div>
 
             <div class="content-section" id="product-summary">
@@ -66,18 +66,11 @@
 
 
                     <div id="summary-container" class="buy-preview">
-                        <p class="r-1-c-2 content-start">Set Preis</p>
-                        <p class="r-1-c-3 content-end">8€</p>
-                        <p class="r-2-c-2 content-start">Versand</p>
-                        <p class="r-2-c-3 content-end">kostenlos</p>
-                        <p class="buy-summary r-3-c-2 content-start">1 Set kostet</p>
-                        <p class="buy-summary r-3-c-3 content-end">8€</p>
+                        
                     </div>
                 </div>
-
                 <button class="submit-button">Bestätigen</button>
             </div>
-
         </div>
     </section>
 

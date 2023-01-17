@@ -19,11 +19,13 @@ section {
 }
 
 .form-container {
-    background-color: #FFFFFF;
+    flex-direction: column;
+}
+
+#registration-form .content-section {
+    background-color: white;
     padding-left: 16px;
     padding-right: 16px;
-    box-shadow: 2px 3px 6px;
-    flex-direction: column;
 }
 
 #registration-form {
@@ -42,11 +44,28 @@ section {
     border-radius: 2.5px;
 }
 
+button {
+    cursor: pointer;
+}
+
 .button-color-select {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     border: 0;
+}
+
+.active {
+    opacity: 100%;
+    border: 0.5px solid black;
+}
+
+.inactive {
+    opacity: 50%
+}
+
+.button-color-select:hover {
+    opacity: 100%;
 }
 
 #btn-red {
@@ -99,6 +118,8 @@ section {
 
 input[type="email"] {
     padding: 0;
+    height: 30px;
+    border: 1px solid black;
 }
 
 
@@ -149,6 +170,13 @@ h3+p {
     grid-row: 2;
     max-height: 50px;
     padding: 5px;
+    border: 0.1px solid black;
+    background-color: #F8F8F8;
+}
+
+.button-subscription:hover {
+    background-color: #0CA53A;
+    color: white;
 }
 
 .image {
@@ -241,6 +269,7 @@ table {
 .r-3-c-3 {
     grid-column: 3;
     grid-row: 3;
+    color: #0CA53A;
 }
 
 h1 {
@@ -282,6 +311,11 @@ h1 {
     text-align: center;
 }
 
+#subscription-settings, #product-summary {
+    display: none;
+}
+
+
 
 
 
@@ -308,7 +342,6 @@ h1 {
     .description {
         width: 50%;
         margin-left: 5%;
-        margin-right: 5%;
     }
 
 
@@ -323,6 +356,12 @@ h1 {
             "."
             "."
             ".";
+    }
+
+    #registration-form .content-section {
+        margin: 0;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .content-r-1-2 {
