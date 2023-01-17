@@ -226,6 +226,7 @@ table {
 
 #buy-preview {
     background-color: #E5E5E5;
+    margin-top:10px;
     margin-bottom: 16px;
     display: grid;
     align-items: center;
