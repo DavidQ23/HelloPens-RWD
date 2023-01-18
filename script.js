@@ -252,7 +252,7 @@ function ShowHiddenSummary() {
 
     let firstChild = summaryContainer.firstElementChild;
 
-    while (firstChild){
+    while (firstChild) {
         summaryContainer.removeChild(firstChild)
         firstChild = summaryContainer.lastElementChild;
     }
@@ -280,6 +280,8 @@ function ShowHiddenSummary() {
 function ActivateWeeklyButton() {
     weeklySub.style.backgroundColor = "#0CA53A";
     weeklySub.style.color = "white";
+    if (confirmButton.disabled == true)
+        confirmButton.disabled = false;
 
     monthlySub.style.backgroundColor = "#F8F8F8";
     monthlySub.style.color = "black";
@@ -292,6 +294,8 @@ function ActivateWeeklyButton() {
 function ActivateMonthlyButton() {
     monthlySub.style.backgroundColor = "#0CA53A";
     monthlySub.style.color = "white";
+    if (confirmButton.disabled == true)
+        confirmButton.disabled = false;
 
     weeklySub.style.backgroundColor = "#F8F8F8";
     weeklySub.style.color = "black";
@@ -304,6 +308,8 @@ function ActivateMonthlyButton() {
 function ActivateQuarterButton() {
     quarterSub.style.backgroundColor = "#0CA53A";
     quarterSub.style.color = "white";
+    if (confirmButton.disabled == true)
+        confirmButton.disabled = false;
 
     weeklySub.style.backgroundColor = "#F8F8F8";
     weeklySub.style.color = "black";
@@ -314,7 +320,7 @@ function ActivateQuarterButton() {
 }
 
 function enableButton() {
-    if (mailInput.value.length == 0){
+    if (mailInput.value.length == 0) {
         continueButton.disabled = true;
     }
     else {
@@ -331,17 +337,17 @@ var swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
-      },
+    },
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  });
+});
 
 
