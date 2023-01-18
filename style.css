@@ -275,6 +275,10 @@ h1 {
     text-align: center;
 }
 
+.image-container img {
+    border: 1px solid black;
+}
+
 .img-container {
     max-width: max-content;
     align-self: center;
