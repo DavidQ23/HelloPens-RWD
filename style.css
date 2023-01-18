@@ -230,6 +230,7 @@ table {
     margin-bottom: 16px;
     display: grid;
     align-items: center;
+    border-radius: 2.5px;
 }
 
 .buy-preview+div {
@@ -337,6 +338,15 @@ h1 {
 @media screen and (min-width: 1024px) {
     .card .card-content p {
         max-width: 600px;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    #registration-form {
+        height: 600px;
     }
     
     .form-container {
