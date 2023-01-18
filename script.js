@@ -2,6 +2,8 @@
 let continueButton = document.getElementById("continue-btn");
 continueButton.addEventListener("click", ShowHiddenSubsriptionSettings);
 
+let mailInput = document.getElementById("email");
+mailInput.addEventListener("input", enableButton);
 
 let confirmButton = document.getElementById("confirm-btn");
 confirmButton.addEventListener("click", ShowHiddenSummary);
@@ -309,6 +311,15 @@ function ActivateQuarterButton() {
     monthlySub.style.backgroundColor = "#F8F8F8";
     monthlySub.style.color = "black";
 
+}
+
+function enableButton() {
+    if (mailInput.value.length == 0){
+        continueButton.disabled = true;
+    }
+    else {
+        continueButton.disabled = false;
+    }
 }
 
 // Initializng Swiper

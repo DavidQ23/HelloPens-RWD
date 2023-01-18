@@ -41,6 +41,11 @@ section {
     border-radius: 2.5px;
 }
 
+
+.submit-button:disabled {
+    background-color: grey;
+}
+
 button {
     cursor: pointer;
 }
