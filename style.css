@@ -341,6 +341,7 @@ h1 {
     }
 
     section {
+        display: flex;
         align-items: center;
     }
 
