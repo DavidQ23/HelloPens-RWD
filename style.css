@@ -114,7 +114,7 @@ button {
 }
 
 input[type="email"] {
-    padding: 0;
+    padding-left: 0.5rem;
     height: 30px;
     border: 1px solid black;
 }
